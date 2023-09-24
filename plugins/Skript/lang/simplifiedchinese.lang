@@ -1,0 +1,190 @@
+# Default Simplified Chinese language file
+
+# Which version of Skript this language file was written for
+version: 2.7.0-beta3
+
+# What null (nothing) should show up as in a string/text
+none: <none>
+
+# -- Skript --
+skript:
+	copyright: ~ created by & © Peter Güttinger aka Njol ~
+	prefix: <gray>[<gold>Skript<gray>] <reset>
+	quotes error: 无效的引�?�使用（"）。如果你想在"引�?�文本"中使用引�?�，�?�写它们（""）。
+	brackets error: 括�?�的数�?或�?置无效。请确�?�?一个左括�?�都有一个相应的�?�括�?�。
+	invalid reload: Skript�?�能通过Bukkit的“/reload�?或Skript的“/skript reload�?命令�?��?新加载。
+	no scripts: 没有�?�现任何脚本，也许你应该写一些 ;)
+	no errors: 所有脚本都已加载，没有错误。
+	scripts loaded: 已加载%s个脚本，包括%s个结构和%s个命令（%s内）
+	finished loading: 已完�?加载。
+
+# -- Skript command --
+skript command:
+	usage: 用法：
+	help:
+		description: Skript的主命令
+		help: 显示此帮助信�?�。使用“/skript reload/enable/disable/update�?�?�获�?�更多信�?�。
+		reload:
+			description: �?新加载�?个特定的脚本�?所有的脚本�?�?置或所有的内容。
+			all: �?新加载�?置�?所有alias和所有脚本
+			config: �?新加载主�?置
+			aliases: �?新加载alias�?置（aliases-english.zip或�?�件jar）
+			scripts: �?新加载所有脚本
+			<script>: �?新加载�?个特定的脚本或�?个文件夹的脚本
+		enable:
+			description: �?�用所有脚本或�?个特定的脚本
+			all: �?�用所有脚本
+			<script>: �?�用�?个特定的脚本或�?个文件夹的脚本
+		disable:
+			description: �?用所有脚本或�?个特定的脚本
+			all: �?用所有脚本
+			<script>: �?用�?个特定的脚本或�?个文件夹的脚本
+		update:
+			description: 检查更新，阅读更新日志，或下载最新版本的Skript
+			check: 检查新版本
+			changes: 列出自当�?版本以�?�的所有�?�化
+			download: 下载最新的版本
+		info: 打�?�一个带有Skript的别�??和文档链接的信�?�
+		gen-docs: 使用�?�件文件夹中的doc-templates生�?文档
+		test: 用于�?行内部的Skript测试
+
+	invalid script: 无法在scripts文件夹中找到脚本<grey>“<gold>%s<grey>�?<red>�?
+	invalid folder: 无法在scripts文件夹中找到文件夹<grey>“<gold>%s<grey>�?<red>�?
+	reload:
+		warning line info: <gold><bold>第%s行：<gray>（%s）<reset>\n
+		error line info: <light red><bold>第%s行：<gray>（%s）<reset>\n
+		reloading: 正在�?新加载<gold>%s<reset>…
+		reloaded: <lime>已�?功�?新加载<gold>%s<lime>。<gray>（<gold>%2$sms<gray>）
+		error: <light red>在�?新加载<gold>%1$s<light red>时�?�到了<gold>%2$s<light red>个错误�?<gray>（<gold>%3$sms<gray>）
+		script disabled: <gold>%s<reset>已�?用。使用<gray>/<gold>skript <cyan>enable <red>%s<reset>�?��?�用它。
+		warning details: <yellow>    %s<reset>\n
+		error details: <light red>    %s<reset>\n
+		other details: <white>    %s<reset>\n
+		line details: <gold>    行：<gray>%s<reset>\n <reset>
+
+		config, aliases and scripts: �?置�?其它�?置和所有脚本
+		scripts: 所有脚本
+		main config: 主�?置
+		aliases: 其它�?置
+		script: <gold>%s<reset>
+		scripts in folder: <gold>%s<reset>中的所有脚本
+		x scripts in folder: <gold>%1$s<reset>中的<gold>%2$s<reset>个脚本
+		empty folder: <gold>%s<reset>�?包�?�任何已�?�用的脚本。
+	enable:
+		all:
+			enabling: 正在�?�用所有已�?用的脚本…
+			enabled: 已�?功�?�用并解�?了所有先�?�?用的脚本。
+			error: 在解�?�?用的脚本时�?�到了%s个错误�?
+			io error: 无法加载一个或多个脚本 - 一些脚本�?�能已被�?命�??，并在�?务器�?新�?�动时�?�用：%s
+		single:
+			already enabled: <gold>%s<reset>已�?�?�用了�?如果它已被更改，使用<gray>/<gold>skript <cyan>reload <red>%s<reset>�?��?新加载。
+			enabling: 正在�?�用<gold>%s<reset>…
+			enabled: 已�?功�?�用并解�?<gold>%s<reset>。
+			error: 在解�?<gold>%1$s<red>时�?�到了%2$s个错误�?
+			io error: 无法�?�用<gold>%s<red>：%s
+		folder:
+			empty: <gold>%s<reset>�?包�?�任何已�?用的脚本。
+			enabling: 正在�?�用<gold>%1$s<reset>中的<gold>%2$s<reset>个脚本…
+			enabled: 已�?功�?�用并解�?<gold>%1$s<reset>中的<gold>%2$s<reset>个先�?�?用的脚本。
+			error: 在解�?<gold>%1$s<red>时�?�到了%2$s个错误�?
+			io error: 在�?�用<gold>%s<red>中的一个或多个脚本时出错（有些脚本�?�能会在�?务器�?新�?�动时�?�用）：%s
+	disable:
+		all:
+			disabled: 已�?功�?用所有脚本。
+			io error: 无法�?命�??一个或多个脚本 - 一些脚本�?�能已被�?命�??，并在�?务器�?新�?�动时�?用：%s
+		single:
+			already disabled: <gold>%s<reset>已�?被�?用了�?
+			disabled: 已�?功�?用<gold>%s<reset>。
+			io error: 无法�?命�??<gold>%s<red>当你�?新�?�动�?务器时，它会�?次�?�用：%s
+		folder:
+			empty: <gold>%s<reset>�?包�?�任何已�?�用的脚本。
+			disabled: 已�?功�?用了<gold>%1$s<reset>中的<gold>%2$s<reset>的脚本。
+			io error: 在�?用<gold>%s<red>中的一个或多个脚本时出错（有些脚本�?�能会在�?务器�?新�?�动时�?用）：%s
+	update:
+		# check/download: see Updater
+		changes:
+			# multiple versions:
+			# 	title: <gold>%s<r> update¦ has¦s have¦ been released since this version (<gold>%s<r>) of Skript:
+			# 	footer: To show the changelog of a version type <gold>/skript update changes <version><reset>
+			# invalid version: No changelog for the version <gold>%s<red> available
+			title: <bold><cyan>%s<reset>（%s）
+			next page: <grey>第%s/%s页。使用<gold>/skript update changes %s<gray>查看下一页（�??示：使用上箭头键）
+	info:
+		aliases: Skript的alias�?�以在这里找到：<aqua>https://github.com/SkriptLang/skript-aliases
+		documentation: Skript的文档�?�以在这里找到：<aqua>https://docs.skriptlang.org/
+		tutorials: Skript的教程�?�以在这里找到：<aqua>https://docs.skriptlang.org/tutorials
+		version: Skript版本：<aqua>%s
+		server: �?务器版本：<aqua>%s
+		addons: 已安装的Skript�?�件：<aqua>%s
+		dependencies: 已安装的�?赖：<aqua>%s
+
+# -- Updater --
+updater:
+	not started: Skript还没有检查最新版本。使用<gold>/skript update check<reset>�?�检查。
+	checking: 正在检查最新版的Skript…
+	check in progress: 新版本的检查已�?在进行中了。
+	updater disabled: 更新程�?已�?用，未能检查Skript的最新版本。
+	check error: <red>检查最新版的Skript时出现了错误：<light red>%s
+	running latest version: 你目�?正在�?行最新的Skript稳定版本。
+	running latest version (beta): 你目�?�?行的是Skript的<i>测试<r>版本，没有新的<i>稳定<r>版�?�用。请注�?，你必须手动更新到较新的测试版�?
+	update available: 新版本的Skript�?�用：<gold>%s<reset>（你目�?正在�?行<gold>%s<reset>）。
+	downloading: 正在下载Skript<gold>%s<reset>…
+	download in progress: 最新版的下载已�?在进行中了。
+	download error: <red>下载最新版的Skript时出现了错误：<light red>%s
+	downloaded: 最新版本的Skript已下载完�?! �?新�?�动�?务器或使用/reload�?�应用更改。
+	internal error: 在检查Skript的最新版本时�?�生了一个内部错误。请查看�?务器日志以了解详情。
+	custom version: 你目�?正在�?行一个自定义的Skript版本。�?会自动安装更新。
+	nightly build: 你目�?正在�?行Skript的测试版。�?会自动安装更新。
+
+# -- Commands --
+commands:
+	no permission message: 你没有必�?的�?��?�?�使用这个命令
+	cooldown message: 你使用此命令的频率过高，请�?�?��?试。
+	executable by players: 这个命令�?�能由玩家使用
+	executable by console: 这个命令�?�能在控制�?�使用
+	correct usage: 正确的用法：
+	invalid argument: 无效的�?�数<gray>“%s<gray>�?<reset>。�?许的是：
+	too many arguments: 这个命令�?�能接�?��?�个的%2$s。
+	internal error: 在试图执行此命令时�?�生了一个内部错误。
+	no player starts with: 没有�??字以“%s�?开头的玩家在线
+	multiple players start with: 有多个�??字以“%s�?开头的玩家在线
+
+# -- Hooks --
+hooks:
+	hooked: �?功与%s连接
+	error: 无法连接到%1$s。这�?�能是因为Skript�?支�?已安装的%1$s版本。
+
+# -- Aliases --
+aliases:
+	# Errors and warnings
+	empty string: ''�?是一个物�?类型
+	invalid item type: “%s�?�?是一个物�?类型
+	empty name: 一个alias必须具有�??称
+	brackets error: 括�?�使用无效
+	not enough brackets: 在字符%s（“%s�?）处打开的括�?�必须被关闭
+	too many brackets: 字符%s（“%s�?）关闭了一个�?存在的部分
+	unknown variation: �?��?%s没有被定义过
+	missing aliases: 以下Minecraft ID没有任何alias：
+	empty alias: alias没有定义任何Minecraft ID或标签
+	invalid minecraft id: Minecraft ID %s无效
+	useless variation: �?��?没有指定任何Minecraft ID或标签，所以它是无用的
+	invalid tags: 指定的标签没有在有效的JSON中定义
+	unexpected section: 这里�?�?许有字符串
+	invalid variation section: 一个部分应该是�?��?，但%s�?是有效的�?��?�??
+	outside section: alias必须放在字符串内
+
+	# Other messages
+	loaded x aliases from: 加载了%s个英语alias（�?�自%s）
+	loaded x aliases: 总共加载了%s个英语alias
+
+# -- Time --
+time:
+	errors:
+		24 hours: 一天�?�有24�?时
+		12 hours: 12�?时制下�?�?许使用超过12�?时
+		60 minutes: 一个�?时�?�有60分钟
+
+# -- IO Exceptions --
+io exceptions:
+	unknownhostexception: 无法连接到%s
+	accessdeniedexception: 拒�?访问%s

@@ -1,0 +1,13 @@
+playername: Nitency
+lang: en_US
+minerate-full-mined: 125
+minerate:
+  diamond: 0
+  gold: 0
+  iron: 0
+  coal: 0
+  ancient debris: 0
+better-click: 15
+cheats:
+  regen: 3
+creation-time: 1690666470311

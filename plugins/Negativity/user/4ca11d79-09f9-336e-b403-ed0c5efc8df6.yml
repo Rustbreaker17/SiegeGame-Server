@@ -1,0 +1,14 @@
+playername: Repulsor
+lang: en_US
+minerate-full-mined: 17
+minerate:
+  diamond: 0
+  gold: 0
+  iron: 0
+  coal: 3
+  ancient debris: 0
+better-click: 16
+cheats:
+  regen: 2
+  forcefield: 3
+creation-time: 1690690695961

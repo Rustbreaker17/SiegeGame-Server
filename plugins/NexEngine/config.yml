@@ -1,0 +1,19 @@
+Plugin:
+  # Command names that will be registered as main plugin commands.
+  # Do not leave this empty. Split multiple names with a comma.
+  Command_Aliases: nexengine
+  # Sets the plugin language.
+  # It will use language config from the '/lang/' sub-folder for specified language code.
+  # By default it's 'en', so 'messages_en.yml' will be used.
+  Language: en
+  # Localized plugin name. It's used in messages and with internal placeholders.
+  Name: NexEngine
+  # Plugin prefix. Used in messages.
+  # You can use %plugin_name_localized% placeholder for a plugin name.
+  Prefix: '&e%plugin_name% &8» &7'
+
+Locale:
+  World_Names:
+    world: World
+    world_nether: Nether
+    world_the_end: The End

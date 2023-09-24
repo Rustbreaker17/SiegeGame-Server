@@ -1,0 +1,236 @@
+# https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Header-&-Footer
+header-footer:
+  enabled: true
+  header:
+  -  <#FFEE00>&m                                                                          </#14F4EB><#14F4EB>&m                                                                          </#FFEE00>
+  - '%animation:Name%'
+  - '&7eternitycraft.me'
+  - '&7discord.eternitycraft.me'
+  - ''
+  footer:
+  - ''
+  - "&7You're currently playing %animation:Gray-White%&lSieges &7on"
+  - '%animation:IP-Grad%'
+  - ''
+  - <#FFEE00>&m                                                                          </#14F4EB><#14F4EB>&m                                                                          </#FFEE00>
+  disable-condition: '%world%=disabledworld'
+  per-world:
+    world1:
+      header:
+      - an example of world with custom
+      footer:
+      - header/footer and prefix/suffix
+    world2;world3:
+      header:
+      - This is a shared header for
+      - world2 and world3
+  per-server:
+    server1:
+      header:
+      - an example of server with custom header
+tablist-name-formatting:
+  enabled: true
+  align-tabsuffix-on-the-right: false
+  character-width-overrides: {}
+  anti-override: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  sorting-types:
+  - GROUPS:owner,admin,mod,helper,builder,vip,default
+  - PLACEHOLDER_A_TO_Z:%luckperms_prefix%
+  - PLACEHOLDER_A_TO_Z:%siegegame_team_name%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+  unlimited-nametag-mode:
+    enabled: false
+    disable-on-boats: true
+    disable-condition: '%world%=disabledworld'
+    dynamic-lines:
+    - abovename
+    - nametag
+    - belowname
+    - another
+    static-lines:
+      myCustomLine: 0.66
+yellow-number-in-tablist:
+  enabled: false
+  value: '%ping%'
+  disable-condition: '%world%=disabledworld'
+belowname-objective:
+  enabled: true
+  number: '%health%'
+  text: '&c❤'
+  disable-condition: '%world%=disabledworld'
+prevent-spectator-effect:
+  enabled: false
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolors%'
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+scoreboard:
+  enabled: false
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: false
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  respect-other-plugins: true
+  scoreboards:
+    admin:
+      display-condition: permission:tab.scoreboard.admin
+      title: '%animation:NameStaff%'
+      lines:
+      - ''
+      - '#BEBEBE ⌚ %server_time_H:mm%  |  %server_time_dd% / %server_time_MM%'
+      - ''
+      - '#005DFB| #005DFB&l> #005DFB&lProfile'
+      - '#005DFB|&f ⭐ #BEBEBERank: #A2C3FC%luckperms_primary_group_name%'
+      - '#005DFB|&f ❇ #BEBEBEEXP: #A2C3FC$%vault_eco_balance_commas%'
+      - '#005DFB|&f 🗡 #BEBEBEK/D: #A2C3FC%kdratio_ratio%'
+      - '#005DFB|&f 🔔 #BEBEBEPing: #A2C3FC%player_ping%ms'
+      - ''
+      - '#005DFB| #005DFB&l> #005DFB&lServer &8[#005DFB%online%&8]'
+      - '#005DFB|&f ⚙ #BEBEBEVersion: #A2C3FC%server_version%'
+      - '#005DFB|&f ⚡ #BEBEBETPS: #A2C3FC%server_tps_1%'
+      - '#005DFB|&f ⚒ #BEBEBEStaff: #A2C3FC%staffonline%'
+      - ''
+      - ' <#FFEE00>play.eternitycraft.me</#14F4EB>'
+      
+    scoreboard1:
+      title: '%animation:Name%'
+      lines:
+      - ''
+      - '#BEBEBE ⌚ %server_time_H:mm%  |  %server_time_dd% / %server_time_MM%'
+      - ''
+      - '#005DFB| #005DFB&l> #005DFB&lProfile'
+      - '#005DFB|&f ⭐ #BEBEBERank: #A2C3FC%luckperms_primary_group_name%'
+      - '#005DFB|&f 🗡 #BEBEBEK/D: #A2C3FC%kdratio_ratio%'
+      - '#005DFB|&f 🔔 #BEBEBEPing: #A2C3FC%player_ping%ms'
+      - ''
+      - '#005DFB| #005DFB&l> #005DFB&lServer &8[#005DFB%online%&8]'
+      - '#005DFB|&f ⚙ #BEBEBEVersion: #A2C3FC%server_version%'
+      - '#005DFB|&f ⚡ #BEBEBETPS: #A2C3FC%server_tps_1%'
+      - '#005DFB|&f ⚒ #BEBEBEStaff: #A2C3FC%staffonline%'
+      - ''
+      - ' <#FFEE00>play.eternitycraft.me</#14F4EB>'
+layout:
+  enabled: true
+  direction: COLUMNS
+  default-skin: mineskin:1753261242
+  enable-remaining-players-text: false
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 0
+  layouts:
+    default:
+      fixed-slots:
+      - '1|       %animation:Colour%&lYour Profile   '
+      - '3|%animation:Colour%⭐ &fRank: %animation:Colour%%luckperms_primary_group_name%'
+      - '4|%animation:Colour%⌚ &fPlay Time: %animation:Colour%%statistic_time_played%'
+      
+      - '16|          %animation:Colour%&lSiege Stats'
+      - '18|%animation:Colour%👥 &fTeam Name: %animation:Colour%%siegegame_team_name%'
+      - '19|%animation:Colour%👥 &fTeam Points: %animation:Colour%%siegegame_team_points%'
+      
+      - '61|          %animation:Colour%&lStatistics'
+      - '63|%animation:Colour%❤ &fHealth: %animation:Colour%%player_health% '
+      - '64|%animation:Colour%📶 &fPing: %animation:Colour%%player_ping%'
+      - '65|%animation:Colour%🗡 &fKills: %animation:Colour%%statistic_player_kills%'
+      - '66|%animation:Colour%☠ &fDeaths: %animation:Colour%%statistic_deaths%'
+      - '67|%animation:Colour%&l🔪 &fKDR: %animation:Colour%%kdratio_ratio% '
+
+      - '21|         &f&lPlayers &8[%animation:Colour%%online%&8]         '
+      
+      groups:
+        staff:
+          condition: permission:tab.staff
+          slots:
+          - 23-60
+        players:
+          slots:
+          - 23-60
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: false
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+  '%essentials_nickname%':
+    '%essentials_nickname%': '%player%'
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: '~%essentials_nickname%'
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- Owner
+- Dev
+- Admin
+- Mod
+- Helper
+- default
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    minigames:
+    - paintball
+    - bedwars
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  update-latency: false
+  spy-servers:
+  - spyserver1
+  - spyserver2
+  server-groups:
+    lobbies:
+    - lobby1
+    - lobby2
+    group2:
+    - server1
+    - server2
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true

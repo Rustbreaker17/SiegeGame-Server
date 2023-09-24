@@ -1,0 +1,16 @@
+playername: BigNailsRazz
+lang: en_US
+minerate-full-mined: 4
+minerate:
+  diamond: 0
+  gold: 0
+  iron: 0
+  coal: 0
+  ancient debris: 0
+better-click: 30
+cheats:
+  timer: 1
+  autoclick: 3
+  regen: 1
+  forcefield: 5
+creation-time: 1690663223071

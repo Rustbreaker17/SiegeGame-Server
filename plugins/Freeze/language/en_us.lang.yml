@@ -1,0 +1,48 @@
+## Extra Information:
+## This is the default language file for Freeze.
+## The default language is "en_us", also known as English (United States).
+## Context will be added as YAML comments above the string.
+
+## The color scheme for messages is green, aqua, and sometimes red.
+## Command feedback that is successful should always be green.
+## Error messages should always be red.
+## Variables in messages can be gray or white.
+
+## Messages use the MiniMessage format in non-strict mode.
+## More information about MiniMessage can be found here:
+## https://docs.adventure.kyori.net/minimessage/format.html
+
+---
+language-name: "en_us"
+decimal-format: "0.00"
+
+error:
+  invalid-target: "<red><gray>{target}</gray> is not online or does not exist.</red>"
+  no-permission: "<red>You do not have access to that command.</red>"
+  nobody-frozen: "<red>There are no frozen players currently online.</red>"
+  not-frozen: "<red><gray>{target}</gray> is not currently frozen.</red>"
+  currently-frozen: "<red><gray>{target}</gray> is already frozen.</red>"
+  player-immune: "<red><gray>{target}</gray> is immune to ice.</red>"
+
+action-bar:
+  frozen: "<aqua><bold>You are frozen!</bold></aqua>"
+  melted: "<green>You are no longer frozen.</green>"
+
+help:
+  title: "<aqua><bold>Freeze Command List:</bold></aqua>"
+  help: "<aqua>/freeze help</aqua><gray>: View this list of commands.</gray>"
+  freeze:
+    player: "<aqua>/freeze freeze player \\<player></aqua><gray>: Freeze a single, online player.</gray>"
+    all: "<aqua>/freeze freeze all</aqua><gray>: Freeze all players on the server.</gray>"
+  melt:
+    player: "<aqua>/freeze melt player \\player></aqua><gray>: Unfreeze a single, online player.</gray>"
+    all: "<aqua>/freeze melt all</aqua><gray>: Unfreeze all players on the server.</gray>"
+  reload: "<aqua>/freeze reload</aqua><gray>: Reload the configuration files.</gray>"
+
+freeze: "<aqua><gray>{target}</gray> is now frozen.</aqua>"
+unfreeze: "<aqua><gray>{target}</gray> is no longer frozen.</aqua>"
+freeze-all: "<aqua>Successfully froze <gray>{amount}</gray> players.</aqua>"
+freeze-all-failure: "<red>There are no players online or all players are immune.</red>"
+unfreeze-all: "<aqua>Successfully unfroze <gray>{amount}</gray> players.</aqua>"
+unfreeze-all-failure: "<red>There are no frozen players online.</red>"
+reload-success: "<green>Successfully reloaded the configuration files.</green>"
