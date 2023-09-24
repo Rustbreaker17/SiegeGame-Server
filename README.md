@@ -7,17 +7,19 @@ Welcome to the SiegeGame Server Repository! This repository contains the plugins
 - [Maps](#maps)
 
 ## Plugins
-
-- [Plugin 1](plugins/plugin1)
-- [Plugin 2](plugins/plugin2)
-- [Plugin 3](plugins/plugin3)
+There are some paid plugins that are missing here, be sure to add it
+- [KnockbackMaster]
+- [Vulcan]
 
 ## Maps
-
-- [Map A](maps/mapA)
-- [Map B](maps/mapB)
-- [Map C](maps/mapC)
+The list of maps that are in this mode are
+- al quads
+- Bellwood
+- Jihn
+- calagary
+- cube
+And a lot moore maps
 
 For more details on each plugin and map, explore their respective directories.
 
-Join us in-game and have a blast!
+If you have any bugs to report or any changes if you want to make feel free to pull request.
