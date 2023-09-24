@@ -8,8 +8,8 @@ Welcome to the SiegeGame Server Repository! This repository contains the plugins
 
 ## Plugins
 There are some paid plugins that are missing here, be sure to add it
-- [KnockbackMaster]
-- [Vulcan]
+- KnockbackMaster
+- Vulcan
 
 ## Maps
 The list of maps that are in this mode are
@@ -18,7 +18,7 @@ The list of maps that are in this mode are
 - Jihn
 - calagary
 - cube
-And a lot moore maps
+And a lot more maps
 
 For more details on each plugin and map, explore their respective directories.
 
